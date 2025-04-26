@@ -1,0 +1,150 @@
+body {
+    background: black;
+    font-family: "Comic Neue", cursive;
+    display: flex;
+    justify-content: center;
+    /*overflow: hidden;*/
+}
+
+span {
+    color: white;
+    font-size: 150%;
+}
+
+#title {
+    font-size: 350%;
+}
+
+#back {
+    position: fixed;
+    color: white;
+    font-size: 250%;
+    text-decoration: none;
+    font-weight: bold;
+    left: 1%;
+    opacity: 0.5;
+    transition: opacity 0.3s linear;
+}
+
+#wrapper {
+    width: 70%;
+    height: 360%;
+    /*border: 3px solid white;*/
+    position: absolute;
+    top: 25%;
+}
+
+#wrapper_iss {
+    width: 70%;
+    height: 420%;
+    /*border: 3px solid white;*/
+    position: absolute;
+    top: 25%;
+}
+
+#wrapper_cassini {
+    width: 70%;
+    height: 400%;
+    /*border: 3px solid white;*/
+    position: absolute;
+    top: 25%;
+}
+
+#wrapper_juno {
+    width: 70%;
+    height: 300%;
+    /*border: 3px solid white;*/
+    position: absolute;
+    top: 25%;
+}
+
+#back:hover {
+    opacity: 1;
+}
+
+#bottomImg {
+    position: absolute;
+    bottom: -310%;
+    z-index: -1;
+    object-fit: cover;
+    height: 50%;
+}
+
+.bord {
+    border-radius: 30px;
+}
+
+h1 {
+    color: white;
+    font-size: 250%;
+    text-align: center;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+#photoWrap {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 20%;
+    /*border: 1px solid yellow;*/
+}
+
+.arrowWrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    color: gray;
+    font-size: 300%;
+    background: rgb(31,36,48);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#photo {
+    width: 80%;
+    height: 100%;
+    background-image: url("https://sun9-43.userapi.com/impg/G7fw0FJJMd5_qzM0D0HelioQ-9KalHTon_ktLA/xMyxQ_dDIQs.jpg?size=2560x1440&quality=95&sign=2a567dc9ca9a7de790941d8ed1814ba8&type=album");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    transition: background-image 0.5s linear;
+}
+
+#label {
+    display: flex;
+    justify-content: center;
+    opacity: 0.5;
+    font-size: 120%;
+}
+
+#center_image {
+    display: flex;
+    justify-content: center;
+}
+
+#center_image > img {
+    margin-left: 50px;
+}
+
+#comp_table {
+    color: white;
+    font-size: 150%;
+    margin: auto;
+    border-spacing: 5px;
+}

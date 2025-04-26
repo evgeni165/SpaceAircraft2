@@ -1,0 +1,259 @@
+body {
+    background: black;
+    font-family: "Comic Sans MS", "Chalkboard SE", "Comic Neue", cursive;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+html {
+    height: 100%;
+    /*transform: scale(0.01);
+    transition: transform 1s ease;*/
+}
+
+a {
+    display: block;
+}
+
+#earth {
+    background-image: url("earth.jpg");
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    position: absolute;
+    top: calc(50% - 150px);
+    left: calc(50% - 150px);
+}
+
+#iss {
+    background-image: url("iss.png");
+    width: 110px;
+    height: 80px;
+    background-size: cover;
+    position: relative;
+    top: calc(50% - 40px);
+    left: calc(50% - 55px);
+    transform: translateX(230px);
+    animation: iss_orbit 30s linear infinite;
+}
+
+@keyframes iss_orbit {
+    from { 
+        transform: rotate(0deg) translateX(230px) rotate(90deg); 
+    }
+    to { 
+        transform: rotate(-360deg) translateX(230px) rotate(90deg); 
+    }
+}
+
+#mars {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Mars_Valles_Marineris_EDIT.jpg/1024px-Mars_Valles_Marineris_EDIT.jpg");
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    position: absolute;
+    top: calc(25% - 125px);
+    left: calc(15% - 125px);
+}
+
+#mro {
+    background-image: url("mro.png");
+    width: 110px;
+    height: 80px;
+    background-size: cover;
+    position: relative;
+    top: calc(50% - 40px);
+    left: calc(50% - 55px);
+    transform: translateX(200px);
+    animation: mro_orbit 35s linear infinite;
+}
+
+@keyframes mro_orbit {
+    from { 
+        transform: rotate(0deg) translateX(200px) rotate(90deg); 
+    }
+    to { 
+        transform: rotate(-360deg) translateX(200px) rotate(90deg); 
+    }
+}
+
+span {
+    color: white;
+    font-size: 280%;
+    position: absolute;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+}
+
+#main_text {
+    opacity: 0.5;
+}
+
+#jupiter {
+    background-image: url("https://sun9-16.userapi.com/s/v1/ig2/Bkz7Qb7uEbPVgj48RL-tEHjOtwJEsvidDOW_SM_BJ27p709oO_ft_6gKgk1z3WrV_0aFm6N5lhhaqeoaEsGGn3GA.jpg?quality=95&as=32x34,48x50,72x75,108x113,160x168,240x252,360x377,480x503,540x566,640x671,720x755,1080x1132,1280x1342,1415x1483&from=bu&u=xR5lWdeeyG8LK_xmOI28npNvZWflAsCw3qdITcqbv7I&cs=770x807");
+    width: 270px;
+    height: 270px;
+    background-size: cover;
+    position: absolute;
+    top: calc(75% - 150px);
+    left: calc(15% - 150px);
+    transform: rotate(-30deg);
+    z-index: -1;
+}
+
+#juno {
+    background-image: url("juno.png");
+    width: 110px;
+    height: 120px;
+    background-size: cover;
+    position: relative;
+    top: calc(50% - 60px);
+    left: calc(50% - 55px);
+    transform: translateX(200px);
+    animation: juno_orbit 120s linear infinite;
+}
+
+@keyframes juno_orbit {
+    from { 
+        transform: rotate(0deg) translateX(200px) rotate(90deg); 
+    }
+    to { 
+        transform: rotate(-360deg) translateX(200px) rotate(90deg); 
+    }
+}
+
+#moon {
+    background-image: url("https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001982/GSFC_20171208_Archive_e001982~orig.jpg?w=1536&h=864&fit=clip&crop=faces%2Cfocalpoint");
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    position: absolute;
+    top: calc(25% - 125px);
+    left: calc(85% - 125px);
+    background-position: -100px 0px;
+}
+
+#lro {
+    background-image: url("lro.png");
+    width: 90px;
+    height: 80px;
+    background-size: cover;
+    position: relative;
+    top: calc(50% - 40px);
+    left: calc(50% - 45px);
+    transform: translateX(200px);
+    animation: lro_orbit 40s linear infinite;
+}
+
+@keyframes lro_orbit {
+    from { 
+        transform: rotate(0deg) translateX(200px) rotate(90deg); 
+    }
+    to { 
+        transform: rotate(-360deg) translateX(200px) rotate(90deg); 
+    }
+}
+
+#saturn {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/c1/Saturn_-_April_25_2016_%2837612580000%29.png");
+    width: 450px;
+    height: 250px;
+    background-size: cover;
+    position: absolute;
+    top: calc(75% - 150px);
+    left: calc(80% - 150px);
+    transform: rotate(-20deg);
+    background-position: -5px 0px;
+}
+
+#cassini {
+    background-image: url("cassini.png");
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    position: relative;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+    transform: translateX(230px);
+    animation: cassini_orbit 50s linear infinite;
+}
+
+@keyframes cassini_orbit { 
+    from {  
+        transform: rotate(0deg) translate(230px, 100px) rotate(90deg);  
+    } 
+    to {  
+        transform: rotate(-360deg) translate(230px, 100px) rotate(90deg);  
+    } 
+}
+
+#voyager {
+    background-image: url("voyager1.png");
+    width: 150px;
+    height: 100px;
+    background-size: cover;
+    position: absolute;
+    top: calc(80% - 50px);
+    left: calc(45% - 75px);
+    transform: rotate(-60deg);
+    animation: voyager_move 10s ease infinite;
+}
+
+@keyframes voyager_move {
+    0% {
+        transform: translate(0, 0) rotate(-60deg);
+    }
+    50% {
+        transform: translate(-100px, 100px) rotate(-60deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(-60deg);
+    }
+}
+
+#newhorizons {
+    background-image: url("newhorizons.png");
+    width: 100px;
+    height: 90px;
+    background-size: cover;
+    position: absolute;
+    top: calc(80% - 45px);
+    left: calc(55% - 50px);
+    animation: newhorizons_move 10s ease infinite;
+}
+
+@keyframes newhorizons_move {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(100px, 100px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+/*#test {
+    color: white;
+    width: 100px;
+    height: 30px;
+    font-size: 200%;
+    opacity: 0;
+    transition: opacity 0.5s linear;
+    position: absolute;
+    top: calc(50% - 15px);
+    left: calc(50% - 50px);
+    transform: translateX(-200px);
+    animation: iss_test_orbit 30s linear infinite;
+}
+
+@keyframes iss_test_orbit {
+    from { 
+        transform: rotate(0deg) translateX(-200px) rotate(90deg); 
+    }
+    to { 
+        transform: rotate(-360deg) translateX(-200px) rotate(90deg); 
+    }
+}*/
