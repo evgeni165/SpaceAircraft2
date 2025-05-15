@@ -1,6 +1,6 @@
 body {
     background: black;
-    font-family: "Comic Neue", cursive;
+    font-family: "Comic Sans MS", "Chalkboard SE", "Comic Neue", cursive;
     display: flex;
     justify-content: center;
     /*overflow: hidden;*/
